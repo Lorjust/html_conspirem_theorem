@@ -4,8 +4,47 @@
         <title>Titanic Swap</title>
         <span lang="EN-US" xml:lang="EN-US" data-contrast="none"></span>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="stylesheet" href="wireframe.css">
     </head>
     <body>
+        <header><nav aria-label="Main navigation">
+            <!-- Top row container for logo and hamburger -->
+
+            <!-- Logo on the left -->
+            <a href="home.html" class="nav-logo" aria-label="Home">
+                <div class="nav-logo-circle">LOGO</div>
+            </a>
+
+            <div class="flex-right">
+            <!-- Hamburger menu button - only visible on mobile -->
+                <button class="nav-toggle" aria-expanded="false" aria-controls="main-nav">
+                    <span class="sr-only">Toggle navigation menu</span>
+                </button>
+
+
+             <!-- your HTML pages go in this list-->
+                <ul id="main-nav" aria-expanded="false">
+                    <li>
+                        <a href="phantoms-of-facts-collection/phantoms-of-fact.html">
+                            Phantoms of Fact
+                        </a>
+                    </li>
+                    <li>
+                        <a href="hall-of-hoaxes-collection/hall-of-hoaxes.html">
+                           Hall of Hoaxes
+                        </a>
+                    </li>
+                    <li>
+                        <a href="fresh-files-collection/fresh-files.html">
+                            Fresh Files
+                           Fresh Files
+                        </a>
+                    </li>
+
+                </ul>
+            </div>
+        </nav>
+    </header>
         <img src="/Website photos/titanic.jpg" alt="Titanic at shipyard" width="300" height="200">
         <br>
         <h1>Titanic Swap</h1>
