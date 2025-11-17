@@ -4,6 +4,7 @@
         <title> Conspirem Theorem</title>
         <span lang="EN-US" xml:lang="EN-US" data-contrast="none"></span>
         <link rel="stylesheet" href="style.css">
+        <link rel="navigation" href="nav.css">
         <meta name="viewport" content="width=device-width, initial-scale=1" />
 
         <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -11,43 +12,20 @@
 <link href="https://fonts.googleapis.com/css2?family=Sometype+Mono:ital,wght@0,400..700;1,400..700&family=Stardos+Stencil&display=swap" rel="stylesheet">
     </head>
     <body>
-        <header>
-            <nav aria-label="Main navigation">
-            <!-- Top row container for logo and hamburger -->
-
-            <!-- Logo on the left -->
-            <a href="index.html" class="nav-logo" aria-label="Home">
-                <div class="nav-logo-circle">LOGO</div>
-            </a>
-
-            <div class="flex-right">
-            <!-- Hamburger menu button - only visible on mobile -->
-                <button class="nav-toggle" aria-expanded="false" aria-controls="main-nav">
-                    <span class="sr-only">Toggle navigation menu</span>
-                </button>
-
-
-             <!-- your HTML pages go in this list-->
-                <ul id="main-nav" aria-expanded="false">
-                    <li>
-                        <a href="phantoms-of-fact/">
-                            Phantoms of Fact
-                        </a>
-                    </li>
-                    <li>
-                        <a href="hall-of-hoaxes/">
-                           Hall of Hoaxes
-                        </a>
-                    </li>
-                    <li>
-                        <a href="fresh-files/">
-                            Fresh Files
-                        </a>
-                    </li>
-
+        <header class="site-header">
+        <div class="logo"><a href="index.html">Conspierem Theorem</a></div>
+        <div>
+            <button class="nav-toggle" aria-controls="main-nav" aria-expanded="false" aria-label="Open navigation menu">
+                <span class="icon" aria-hidden="true">☰</span>
+            </button>
+            <nav class="nav" id="main-nav">
+                <ul>
+                    <li><a href="/fresh-files/">Fresh Files</a></li>
+                    <li><a href=" /hall-of-hoaxes">Hall Of Hoaxes</a></li>
+                    <li><a href="/phantoms-of-fact/">Phantoms Of Fact</a></li>
                 </ul>
-            </div>
-        </nav>
+            </nav>
+        </div>
     </header>
         <h1><span data-contrast="none"><span data-ccp-para="">Conspirem</span><span data-ccp-para=""> Theorem</span></span></h1>
         <img src="/Website-photos/Illumanati.jpg" alt="Black and white dollar highlighting  the illumanati symbol"width="600" height="350">
