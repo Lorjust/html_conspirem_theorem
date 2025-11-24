@@ -22,8 +22,7 @@ p {
     font-size: 16px;
     line-height: 31px;
     color:black;
-    text-align: center;
-    margin: 0 15%;
+    max-width: 75ch;
 }
 
 h1 {
@@ -54,13 +53,22 @@ body {
   background-image: url(Website-photos/background.png);
   background-repeat: no-repeat;
   background-size: cover;
+  background-attachment: fixed;
   margin: 0;
 }
 
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    width: 70%;
+    margin: 0 auto;
+}
+
 .images {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
+    width: 100%;
+    height: auto;
 }
 
 .videos {
