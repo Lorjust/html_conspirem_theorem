@@ -1,17 +1,34 @@
 <!DOCTYPE html>
-<html>
+<html>  
     <head>
         <title>Fresh Files</title>
         <span lang="EN-US" xml:lang="EN-US" data-contrast="none"></span>
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="stylesheet" href="../style.css">
+        <link rel="stylesheet" href="../nav.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
 
         <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Sometype+Mono:ital,wght@0,400..700;1,400..700&family=Stardos+Stencil&display=swap" rel="stylesheet">
     </head>
-
+   
     <body>
+        <header class="site-header">
+        <div class="logo"><a href="../index.html">MySite</a></div>
+        <div>
+            <button class="nav-toggle" aria-controls="main-nav" aria-expanded="false" aria-label="Open navigation menu">
+                <span class="icon" aria-hidden="true">☰</span>
+            </button>
+            <nav class="nav" id="main-nav">
+                <ul>
+                    <li><a href="/hall-of-hoaxes/">Hall of Hoaxes</a></li>
+                    <li><a href=" /fresh-files/">Fresh Files</a></li>
+                    <li><a href="/phantoms-of-fact/">Phantoms of Fact</a></li>
+                </ul>
+            </nav>
+        </div>
+
+    </header>
         <img class="images" src="/Website-photos/Fresh-files.png" alt="Eerie locker boxes" width="300" height="200">
         <h1>Welcome to Fresh Files</h1>
         <p>Your one-stop destination for the latest and greatest files.</p>
@@ -24,5 +41,7 @@
 
         <img class="images" src="/Website-photos/airborne.jpg" alt="Malaysia flight in air" width="300" height="200">
         <h2><a href="malaysia-flight.html">Malaysia Flight 370</a></h2>
+
+        <script src="../nav.js"></script>
     </body>
 </html>

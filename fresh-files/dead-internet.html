@@ -3,8 +3,9 @@
     <head>
         <title>Dead Internet Theory</title>
         <span lang="EN-US" xml:lang="EN-US" data-contrast="none"></span>
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="stylesheet" href="../style.css">
+        <link rel="stylesheet" href="../nav.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
 
         <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -12,6 +13,22 @@
     </head>
 
     <body>
+        <header class="site-header">
+        <div class="logo"><a href="../index.html">MySite</a></div>
+        <div>
+            <button class="nav-toggle" aria-controls="main-nav" aria-expanded="false" aria-label="Open navigation menu">
+                <span class="icon" aria-hidden="true">☰</span>
+            </button>
+            <nav class="nav" id="main-nav">
+                <ul>
+                    <li><a href="/hall-of-hoaxes/">Hall of Hoaxes</a></li>
+                    <li><a href=" /fresh-files/">Fresh Files</a></li>
+                    <li><a href="/phantoms-of-fact/">Phantoms of Fact</a></li>
+                </ul>
+            </nav>
+        </div>
+
+    </header>
         <img class="images" src="/Website-photos/error.jpg" alt="computer code depicting errors" width="300" height="200">
         <br>
         <h1>Dead Internet Theory</h1>
@@ -39,5 +56,7 @@
             to prove beyond a shadow of a doubt, the main thesis is very compelling, especially in the current state of social media and social interactions.</p>
 
             <p>embed not working: <a href="https://youtu.be/PaVjQFMg7L0?list=TLPQMjQwOTIwMjU9mknGIkQbYA" target="_blank">Video breakdown</a></p>
+
+            <script src="../nav.js"></script>
     </body>
 </html>

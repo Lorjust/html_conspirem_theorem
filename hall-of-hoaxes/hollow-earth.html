@@ -2,10 +2,10 @@
 <html>
     <head>
         <title>Hollow Earth</title>
-        <span lang="EN-US" xml:lang="EN-US" data-contrast="auto"></span>
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-
+        <span lang="EN-US" xml:lang="EN-US" data-contrast="none"></span>
         <link rel="stylesheet" href="../style.css">
+        <link rel="stylesheet" href="../nav.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
 
         <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -13,6 +13,22 @@
 
     </head>
     <body>
+        <header class="site-header">
+        <div class="logo"><a href="../index.html">MySite</a></div>
+        <div>
+            <button class="nav-toggle" aria-controls="main-nav" aria-expanded="false" aria-label="Open navigation menu">
+                <span class="icon" aria-hidden="true">☰</span>
+            </button>
+            <nav class="nav" id="main-nav">
+                <ul>
+                    <li><a href="/hall-of-hoaxes/">Hall of Hoaxes</a></li>
+                    <li><a href=" /fresh-files/">Fresh Files</a></li>
+                    <li><a href="/phantoms-of-fact/">Phantoms of Fact</a></li>
+                </ul>
+            </nav>
+        </div>
+
+    </header>
         <img class="images" src="/Website-photos/hollow-earth.png" alt="Artistic depiction of a cross-section of the Earth showing a hollow interior" width="300" height="200">
         <br>
         <h1>Hollow Earth</h1>
@@ -26,5 +42,7 @@
             <a href="https://youtu.be/wfP1M-rF3eQ" target="_blank">Link to first video</a>
             <br>
             <a href="https://youtu.be/W685yvBpU2E" target="_blank">Link to second video</a>
+
+            <script src="../nav.js"></script>
     </body>
 </html>
