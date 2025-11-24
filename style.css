@@ -54,7 +54,7 @@ body {
   background-image: url(Website-photos/background.png);
   background-repeat: no-repeat;
   background-size: cover;
-  
+  margin: 0;
 }
 
 .images {
