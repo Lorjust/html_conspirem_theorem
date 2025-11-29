@@ -80,15 +80,29 @@ main{
 }
 
 /* Cards */
-
-.dyatlov-bg {
-    background-image: linear-gradient(90deg,rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.2) 100%), url(Website-photos/hikers.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
+.card {
     width: 500px;
     height: 300px;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 20px;
-    color:#F6F6F6
+    color:#F6F6F6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.dyatlov-bg {
+    background: linear-gradient(90deg,rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.4) 100%), url(Website-photos/hikers.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.decoration {
+    text-decoration: none;
+    transition: transform 0.5s ease;
+}
+
+.decoration:hover, .decoration:focus {
+    transform: scale(1.1);
 }
