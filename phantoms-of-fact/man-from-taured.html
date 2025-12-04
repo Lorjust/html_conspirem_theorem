@@ -12,44 +12,23 @@
 <link href="https://fonts.googleapis.com/css2?family=Sometype+Mono:ital,wght@0,400..700;1,400..700&family=Stardos+Stencil&display=swap" rel="stylesheet">
     </head>
     <body>
-        <header>
-            <nav aria-label="Main navigation">
-            <!-- Top row container for logo and hamburger -->
-
-            <!-- Logo on the left -->
-            <a href="../index.html" class="nav-logo" aria-label="Home">
-                <div class="nav-logo-circle">LOGO</div>
-            </a>
-
-            <div class="flex-right">
-            <!-- Hamburger menu button - only visible on mobile -->
-                <button class="nav-toggle" aria-expanded="false" aria-controls="main-nav">
-                    <span class="sr-only">Toggle navigation menu</span>
-                </button>
-
-
-             <!-- your HTML pages go in this list-->
-                <ul id="main-nav" aria-expanded="false">
-                    <li>
-                        <a href="../phantoms-of-fact/">
-                            Phantoms of Fact
-                        </a>
-                    </li>
-                    <li>
-                        <a href="../hall-of-hoaxes/">
-                           Hall of Hoaxes
-                        </a>
-                    </li>
-                    <li>
-                        <a href="../fresh-files/">
-                            Fresh Files
-                        </a>
-                    </li>
-
+        <header class="site-header">
+        <div class="logo"><a href="../index.html"><img src="/Website-photos/logo.svg" alt="home"/></a></div>
+        <div>
+            <button class="nav-toggle" aria-controls="main-nav" aria-expanded="false" aria-label="Open navigation menu">
+                <span class="icon" aria-hidden="true">☰</span>
+            </button>
+            <nav class="nav" id="main-nav">
+                <ul>
+                    <li><a href="/hall-of-hoaxes/">Hall of Hoaxes</a></li>
+                    <li><a href=" /fresh-files/">Fresh Files</a></li>
+                    <li><a href="/phantoms-of-fact/">Phantoms of Fact</a></li>
                 </ul>
-            </div>
-        </nav>
-    </header><main>
+            </nav>
+        </div>
+
+    </header>
+    <main>
         <img class="images" src="/Website-photos/taured.jpg" alt="Old, used passport" width="300" height="200">
         
         <h1>Man From Taured</h1>
@@ -80,5 +59,6 @@
                 frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" 
                 allowfullscreen></iframe>
 
-                </main> <script src="nav.js"></script>
+                </main>
+                <script src="../script.js"></script>
     </body>
