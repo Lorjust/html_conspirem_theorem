@@ -90,6 +90,24 @@ main{
     justify-content: center;
     align-items: center;
 }
+/* Cards-Home */
+.phantoms-bg {
+    background: linear-gradient(90deg,rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.4) 100%), url(Website-photos/ghost.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.hoaxes-bg {
+    background: linear-gradient(90deg,rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.4) 100%), url(Website-photos/Hall-of-hoaxes.png);
+    background-repeat: no-repeat;
+    background-size: cover; 
+}
+
+.fresh-bg {
+    background: linear-gradient(90deg,rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.4) 100%), url(Website-photos/Fresh-files.png);
+    background-repeat: no-repeat;
+    background-size: cover; 
+}
 /* Cards-Phantoms of fact */
 .dyatlov-bg {
     background: linear-gradient(90deg,rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.4) 100%), url(Website-photos/hikers.jpg);
@@ -105,9 +123,42 @@ main{
     background: linear-gradient(90deg,rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.4) 100%), url(Website-photos/titanic-afloat.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-/* Cards-Hall of hoaxes */
-/* Cards-Fresh files */
 }
+/* Cards-Hall of hoaxes */
+.moon-bg {
+    background: linear-gradient(90deg,rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.4) 100%), url(Website-photos/moon-landing.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.bermuda-bg {
+    background: linear-gradient(90deg,rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.4) 100%), url(Website-photos/the-triangle.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.hollow-bg {
+    background: linear-gradient(90deg,rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.4) 100%), url(Website-photos/hollow-earth.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+/* Cards-Fresh files */
+.boeing-bg {
+    background: linear-gradient(90deg,rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.4) 100%), url(Website-photos/Boeing-plane.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;   
+}
+
+.internet-bg {
+    background: linear-gradient(90deg,rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.4) 100%), url(Website-photos/404-erroe.jpg);
+    background-repeat: no-repeat;
+    background-size: cover; 
+}
+
+.malaysia-bg {
+    background: linear-gradient(90deg,rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.4) 100%), url(Website-photos/Malaysia-plane.jpg);
+    background-repeat: no-repeat;
+    background-size: cover; 
+}
+
 .decoration {
     text-decoration: none;
     transition: transform 0.5s ease;
