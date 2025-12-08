@@ -12,11 +12,6 @@ body{
     --black: #000000;
 }
 
-img {
-    max-width: 80vw;
-    height: auto;
-}
-
 /* <!--typography --> */
 h1, h2, h3 {
   font-family: "Stardos Stencil", system-ui;
@@ -77,12 +72,40 @@ main{
     width: 100%;
     height: auto;
 }
-
 .videos {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+}
+
+/* Responsive video container */
+.videos {
+        /* prefer nearly-full viewport on small screens, cap on large screens */
+        width: clamp(280px, 90vw, 1200px);
+        aspect-ratio: 16 / 9;
+        max-width: 100%;
+        margin: 0 auto 1rem;
+        box-sizing: border-box;
+}
+
+/* Make embedded players and <video> scale to the container */
+.videos,
+.videos iframe,
+.videos video,
+.videos embed,
+.videos object {
+        width: 100%;
+        height: 100%;
+        display: block;
+        border: 0;
+}
+
+/* Small-screen fallback: remove aspect-ratio if undesired, allow natural height via 56.25% trick */
+@media (max-width: 420px) {
+    .videos {
+        width: 95vw;
+        aspect-ratio: auto;
+    }
 }
 
 /* Cards */
