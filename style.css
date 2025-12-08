@@ -1,3 +1,10 @@
+html,
+body{
+    max-width: 100vw;
+    overflow:auto;
+    scroll-behavior: smooth;
+}
+
 :root {
     --white: #F6F6F6;
     --red: #BA3E2D;
@@ -80,16 +87,28 @@ main{
 
 /* Cards */
 .card {
-    width: 600px;
-    height: 400px;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 20px;
-    color:#F6F6F6;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+        /* responsive width: min 220px, prefer 45vw, max 600px */
+        width: clamp(220px, 45vw, 600px);
+        /* preserve original 3:2 proportion (600x400) while keeping responsive height */
+        aspect-ratio: 3 / 2;
+        max-width: 100%;
+        margin: 0 auto 20px;
+        color: var(--white);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        box-sizing: border-box;
+        /* play nicely when inside flex containers */
+        flex: 0 1 auto;
 }
+
+/* Fallback for very small/old browsers: media query reduces width */
+@media (max-width: 360px) {
+    .card {
+        width: 95vw;
+    }
+}
+
 /* Cards-Home */
 .phantoms-bg {
     background: linear-gradient(90deg,rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.4) 100%), url(Website-photos/ghost.jpg);
