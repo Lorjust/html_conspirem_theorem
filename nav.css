@@ -3,8 +3,8 @@
     justify-content: space-between;
     align-items: center;
     padding: 1rem;
-    background: #fff;
-    border-bottom: 1px solid #ccc;
+    background: #35374B;
+    border-bottom: 1px solid #35374B;
 }
 
 .logo {
@@ -22,7 +22,7 @@
 
 .nav a {
     text-decoration: none;
-    color: #333;
+    color: #F6F6F6;
 }
 
 .nav-toggle {
